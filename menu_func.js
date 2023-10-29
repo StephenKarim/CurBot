@@ -71,8 +71,22 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "about.html";
       });
 
-      getStartedButton.addEventListener("click", function () {
-        fadeAndRedirect("terms_conditions_box.html");
+    getStartedButton.addEventListener("click", function () {
+      // Check if "accepted" file exists
+      fetch('accepted')
+          .then(response => {
+              // If the file exists, redirect to resources.html
+              if (response.ok) {
+                  fadeAndRedirect("resources.html");
+              } else {
+                  // If the file doesn't exist, redirect to terms_conditions_box.html
+                  fadeAndRedirect("terms_conditions_box.html");
+              }
+          })
+          .catch(error => {
+              console.error('Error checking file:', error);
+              // Handle errors, you might want to redirect to a default page or show an error message.
+          });
     });
 
   letsButton.addEventListener("click", function () {
