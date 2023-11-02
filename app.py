@@ -25,53 +25,9 @@ def get_vectorstore():
         embeddings=embeddings,
     )
 
-    # vector_store2 = Qdrant(
-    #     client=client,
-    #     collection_name="QDRANT_COLLECTION_NAME2",
-    #     embeddings=embeddings,
-    # )
-
-    # # Concatenate the two vector stores
-    # vector_store = vector_store1.concat(vector_store2)
 
     return vector_store
 
-
-
-# def get_vectorstore2():
-#   """
-#   Gets a vector store for multiple collections.
-
-#   Returns:
-#     A list of Qdrant objects, one for each collection.
-#   """
-
-#   client = qdrant_client.QdrantClient(
-#       os.getenv("QDRANT_HOST"),
-#       api_key=os.getenv("QDRANT_API_KEY")
-#   )
-
-#   embeddings = OpenAIEmbeddings()
-
-#   # Get the list of collection names
-#   collection_names = os.getenv("QDRANT_COLLECTION_NAMES").split(",")
-
-#   from langchain.vectorstores import LangChainVectorStore
-
-#   vector_store = LangChainVectorStore(
-#         embeddings=OpenAIEmbeddings(),
-#     )
-
-#   # Iterate over the list of collection names and create a Qdrant object for each collection
-#   for collection_name in collection_names:
-#     vector_store.append(Qdrant(
-#         client=client,
-#         collection_name=collection_name,
-#         embeddings=embeddings,
-#     ))
-
-#   # Return the list of Qdrant objects
-#   return vector_store
 
 def get_conversation_chain(vectorstore):
     llm = ChatOpenAI(temperature=0.6)
