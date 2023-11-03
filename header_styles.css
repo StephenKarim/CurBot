@@ -158,6 +158,11 @@ header {
   background-color: #ffffff; 
 }
 
+#lets-button {
+  pointer-events: none;
+  cursor: default;
+}
+
 .menu-row1 {
   grid-area: menu-row1;
   display: inline-flex;
