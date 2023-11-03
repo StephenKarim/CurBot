@@ -116,6 +116,74 @@
       
 
       <script>
+    //      document.addEventListener('DOMContentLoaded', function() {
+    //   // Add the 'slide-in' class to trigger the transition
+    //   document.querySelector('.top-container').classList.add('slide-in');
+    // });
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //   // Delay the addition of the 'pop-in' class by 1 second
+    //   setTimeout(function() {
+    //     // Add the 'pop-in' class to trigger the transition
+    //     document.querySelector('.top-img').classList.add('pop-in');
+    //   }, 500); // 1000 milliseconds = 1 second
+    // });
+
+    document.addEventListener('DOMContentLoaded', function () {
+  const topContainer = document.querySelector('.top-container');
+  const elements = [topContainer];
+
+  function handleScroll() {
+    const triggerOffset = window.innerHeight * 0.8; // Adjust as needed
+
+    elements.forEach(element => {
+      const elementOffset = element.getBoundingClientRect().top;
+      const isInView = elementOffset < triggerOffset;
+
+      if (isInView) {
+        element.classList.add('slide-in');
+        element.classList.remove('slide-out');
+      } else {
+        element.classList.remove('slide-in');
+        element.classList.add('slide-out');
+      }
+    });
+  }
+
+  // Attach scroll event listener
+  window.addEventListener('scroll', handleScroll);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const chatContainer = document.querySelector('.chatbot-container');
+  const resourceContainer = document.querySelector('.resource-container');
+  const containers = [chatContainer, resourceContainer];
+
+  function handleScroll() {
+    const triggerOffset = window.innerHeight * 0.8; // Adjust as needed
+
+    containers.forEach(container => {
+      const containerOffset = container.getBoundingClientRect().top;
+      const isInView = containerOffset < triggerOffset;
+
+      if (isInView) {
+        container.classList.add('slide-in');
+        container.classList.remove('slide-out');
+      } else {
+        container.classList.remove('slide-in');
+        container.classList.add('slide-out');
+      }
+    });
+  }
+
+  // Attach scroll event listener
+  window.addEventListener('scroll', handleScroll);
+});
+
+
+
+
+
         function redirectToStreamlit() {
             // Redirect to your Streamlit app URL when the button is clicked
             window.location.href = "https://curbot.streamlit.app/";

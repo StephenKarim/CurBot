@@ -7,6 +7,11 @@ body {
   color: white; 
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .top-container {
   display: grid;
   grid-template-columns: auto auto; 
@@ -23,6 +28,19 @@ body {
   box-shadow: 0 0 6px #21222250;
   margin-top: 10vw;
   margin-bottom: 20vw;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.top-container.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.top-container.slide-out {
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
 .top-title {
@@ -57,8 +75,34 @@ body {
   /* border: 1px solid #ffffff; */
   margin: 0;
   margin-right: 2vw;
-  
 }
+
+
+.chatbot-container.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.chatbot-container.slide-out {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.resource-container.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.resource-container.slide-out {
+  opacity: 0;
+  transform: translateX(100%);
+}
+/* 
+.top-img.pop-in {
+  opacity: 1;
+  transform: scale(1);
+} */
+
 
 .main-get-started-button {
   grid-area: main-get-started-button;
@@ -71,11 +115,37 @@ body {
   margin-left: 40%;
   margin-bottom: 3vw;
   padding: 8px; 
-  border: 1px inset #bba947;
+  border: 1px inset #000000;
   border-radius: 20px;
   background-color: #bbaa47e5; 
   color: #000000; 
   box-shadow: solid 0 0 10px rgba(0, 0, 0, 0.5); 
+  animation: pulse 2s infinite 2s; 
+}
+
+/* define the animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(187, 169, 71, 0.7); /* Adjust the color and size as needed */
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(187, 169, 71, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(187, 169, 71, 0.7);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .main-get-started-button:hover {  
@@ -111,6 +181,19 @@ body {
   font-weight: 600;
   box-shadow: 0 0 2px rgba(214, 214, 214, 0.5);
   cursor: pointer;
+  
+}
+
+.chatbot-container {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.resource-container {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 

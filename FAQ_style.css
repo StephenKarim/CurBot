@@ -8,25 +8,24 @@ body {
   background-color: transparent; 
   color: #333; 
   margin: auto;
-  width: 100%;
+  width: 80%;
   margin-bottom: 3vw;
   height: auto;
   border-radius: 5px;
   margin-top: 4vw;
   font-family: 'Courier New', Courier, monospace;
-  line-height: 2;
-  /* border: 1px solid black;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); */
+  line-height: 1.2;
+  /* border: 1px solid black; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
 
 .top-mid-title {
-  margin: 0;
   font-size: clamp(2rem, 4vw, 3rem); 
   color: #000000; 
-  margin-top: 5vw;
   font-weight: bold;
+  /* border: 1px solid black; */
 }
 
 .dropdown {
@@ -37,6 +36,10 @@ body {
   border-radius: 5px;
   padding: 20px;
   font-size: clamp(1rem, 4vw, 1.5rem); 
+}
+
+.dropdown:last-child {
+  margin-bottom: 0;
 }
 
 .question {

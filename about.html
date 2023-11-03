@@ -164,6 +164,45 @@
 
   
 </footer>
+<!-- Add this script tag in your HTML file or include in your existing JavaScript file -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const titles = document.querySelectorAll('.mission-title, .offerings-title, .commitment-title, .get-started-title');
+  const paragraphs = document.querySelectorAll('.mid-container p');
+
+  function handleScroll() {
+    const triggerOffset = window.innerHeight * 0.8; // Adjust as needed
+
+    titles.forEach(title => {
+      const titleOffset = title.getBoundingClientRect().top;
+      const isTitleInView = titleOffset < triggerOffset;
+
+      if (isTitleInView && !title.classList.contains('fade-in')) {
+        title.classList.add('fade-in');
+      }
+    });
+
+    paragraphs.forEach(paragraph => {
+      const paragraphOffset = paragraph.getBoundingClientRect().top;
+      const isParagraphInView = paragraphOffset < triggerOffset;
+
+      if (isParagraphInView && !paragraph.classList.contains('fade-in')) {
+        paragraph.classList.add('fade-in');
+      }
+    });
+  }
+
+  // Attach scroll event listener
+  window.addEventListener('scroll', handleScroll);
+
+  // Trigger initial check on page load
+  handleScroll();
+});
+
+
+</script>
+
+
 
   
 </body> 

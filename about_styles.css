@@ -26,6 +26,26 @@ body {
 
 .mid-container p {
   font-size: clamp(1rem, 3vw, 1.5rem);
+  
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0.5;
+  }
+}
+
+
+
+.slide-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mid-title {
@@ -35,8 +55,10 @@ body {
   border-bottom: 1px solid #000000b4;
   width: 30%;
   padding-bottom: 1vw;
-
+  animation: pulse linear both;
+  animation-timeline: view();
 }
+
 
 .animated-paragraph {
   text-align: center;
@@ -44,6 +66,8 @@ body {
   font-size: clamp(1rem, 3vw, 2rem);
   line-height: 2;
   margin-top: 20px;
+  animation: pulse linear both;
+  animation-timeline: view();
 }
 
 .mission-section,
@@ -57,6 +81,23 @@ body {
   justify-content: center;
   margin-top: 30px;
   font-size: clamp(1rem, 3vw, 2rem);
+  animation: pulse linear both;
+  animation-timeline: view();
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
 }
 
 .mission-title,
@@ -66,6 +107,7 @@ body {
   text-align: center;
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   color: #00000084;
+ 
 }
 
 .offerings-list {
