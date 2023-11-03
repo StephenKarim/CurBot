@@ -32,7 +32,7 @@ body {
   transition: .4s;
   /* border: 1px solid white; */
   margin-left: 65vw;
-  margin-top: -3vw;
+  margin-top: -1vw;
   
   .body {
     position: absolute;
@@ -142,8 +142,8 @@ body {
 
 .shadow {
   position: absolute;
-  margin-left: 65vw;
-  margin-top: clamp(-2rem, -4vw, -5rem);
+  margin-left: 68.2vw;
+  margin-top: clamp(-1rem, -3vw, -4rem);
   top: 200px;
   left: 50%;
   width: 400px;
@@ -196,9 +196,9 @@ body {
 
   .names {
     margin-top: 6vw;
-    margin-left: clamp(12rem, 35vw, 50rem);
+    margin-left: clamp(10rem, 30vw, 33rem);
     color: rgba(255, 255, 255, 0.692);
-    font-size: clamp(0.75rem, 5vw, 1.5rem);
+    font-size: clamp(0.75rem, 5vw, 2rem);
   }
 
   .role {
@@ -221,23 +221,90 @@ body {
   @media (width <= 1280px) {
     .names {
       
-      margin-left: clamp(15rem, 30vw, 19rem);
+      margin-left: clamp(10rem, 30vw, 21rem);
      
     }
 
     .shadow {      
-      margin-left: 70vw;
+      margin-left: 75vw;
       margin-top: clamp(-2rem, -4vw, -5rem);
   }
-}
 
-  @media (width <= 600px) {
+  .animated-mail {
+    margin-left: 70vw;
+  }
+
+  @media (width <= 1000px) {
     .names {
       
-      margin-left: clamp(1rem, 5vw, 20rem);
+      margin-left: clamp(1rem, 30vw, 14rem);
      
     }
+
+    .shadow {      
+      margin-left:77vw;
+      margin-top: clamp(-0.5rem, -4vw, -5rem);
+    }
+
+    @media (width <= 900px) {
+      .names {
+      
+        margin-left: 20vw;
+       
+      }
+
+     
+
+      .animated-mail {
+        margin-left: 65vw;
+      }
+    
+  
+      .shadow {      
+        margin-left:73vw;
+        margin-top: clamp(-0.5rem, -4vw, -5rem);
+      }
+
+
+      @media (width <= 700px) {
+        .names {
+          font-size: clamp(0.75rem, 5vw, 1.2rem);
+          margin-left: 13vw;
+         
+        }
+  
+        .role {
+          
+          font-size: clamp(1rem, 5vw, 1.5rem);
+        
+  
+        }
+  
+        .animated-mail {
+          margin-left: 60vw;
+        }
+      
+    
+        .shadow {      
+          margin-left:70vw;
+          margin-top: clamp(-2rem, -4vw, -5rem);
+        }
+  
+      }
+    }
+
+    
   }
+
+  
+}
+
+
+
+
+
+
+ 
 
 /* .docs {
   color:#50df3b ;
