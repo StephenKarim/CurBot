@@ -5,9 +5,10 @@ body {
 :root {
 	--cards: 7;
 	--cardHeight: auto;
-	--cardTopPadding: 4.8vh;
-	--cardMargin: 4vw;
+	--cardTopPadding: clamp(2rem, 3vmax, 3rem);
+	--cardMargin: 2vmin;
 }
+
 
 .container {
 	width: 80%;
@@ -17,7 +18,20 @@ body {
   padding-top: 0;
   font-family: Arial, sans-serif;
   line-height: 1.5;
+  /* border:1px solid black; */
 }
+
+@media (width <= 900px) {
+  .container {
+    width: 100%;
+  }
+
+  :root {
+  	--cardTopPadding: clamp(2.5rem, 4vmax, 10rem);
+  
+  }
+}
+
 
 
 
@@ -30,7 +44,7 @@ body {
 	gap: var(--cardMargin);
 	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
 	margin-bottom: var(--cardMargin);
-  
+  border:1px solid rgb(150, 31, 31);
 }
 
 #card1 {
@@ -117,6 +131,8 @@ body {
 	align-items: center;
 	transition: all 0.5s;
   background-color: white;
+  width: 100%;
+  /* border:1px solid black; */
 }
 
 h2 {
