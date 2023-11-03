@@ -48,7 +48,7 @@
         <div class="menu-row4">
             <span class="menu-nums">7</span>
             <button class="menu-items" id="lets-button">let's</button>
-            <button class="menu-items" id="get-started-button">getStarted()</button>
+            <button class="menu-items" id="get-started-button" onclick="redirectToStreamlit()">getStarted()</button>
         </div>          
     </div>
 </header>
@@ -166,6 +166,11 @@
 </footer>
 <!-- Add this script tag in your HTML file or include in your existing JavaScript file -->
 <script>
+
+function redirectToStreamlit() {
+            
+            window.location.href = "https://curbotchat.vercel.app/";
+        }
 document.addEventListener('DOMContentLoaded', function () {
   const titles = document.querySelectorAll('.mission-title, .offerings-title, .commitment-title, .get-started-title');
   const paragraphs = document.querySelectorAll('.mid-container p');

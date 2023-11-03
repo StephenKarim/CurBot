@@ -1,3 +1,8 @@
+function redirectToStreamlit() {
+            
+  window.location.href = "https://curbotchat.vercel.app/";
+}
+
 document.addEventListener("DOMContentLoaded", function () {           
     const contactButton = document.getElementById("contact-button");           
     const topicsButton = document.getElementById("topics-button");    
