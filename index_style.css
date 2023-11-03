@@ -175,7 +175,7 @@ body {
   /* border: 1px solid #000; */
   color: #000000c4;
   border: 2.5px solid #000000c4;;
-  border-radius: 10px; 
+  border-radius: 50px; 
   width: auto;
   padding: 10px;
   font-weight: 600;
@@ -211,6 +211,11 @@ body {
 
 .bot-curbot-img {
   margin: 3vw;
+}
+
+.bot-resource-paragraph,
+.bot-curbot-paragraph {
+  padding:1vw;
 }
 
 
