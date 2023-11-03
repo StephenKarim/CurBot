@@ -22,7 +22,7 @@ body {
   /* margin-left: 15%; */
   width: 100%;
   height: auto;
-  border: 2px solid #e9e6e6be;
+  /* border: 2px solid #e9e6e6be; */
   border-radius: 10px;
   background: linear-gradient(to right, #0c0c0cd3, #0c0c0cd3);
   box-shadow: 0 0 6px #21222250;
@@ -62,19 +62,22 @@ body {
 }
 
 .top-paragraph {
-  font-size: clamp(0.75rem, 3vw, 2.5rem);
+  font-size: clamp(0.75rem, 2vw, 2rem);
   margin: 3%;
   height: auto;
   width: auto;
+  font-weight: none;
+  line-height: 1.5;
   /* border: 1px solid #fafafa; */
 }
 
 
 .top-img{ 
-  width: clamp(5rem, 30vw, 25rem);  
+  width: clamp(5rem, 20vw, 20rem);  
   /* border: 1px solid #ffffff; */
   margin: 0;
   margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 
@@ -107,20 +110,21 @@ body {
 .main-get-started-button {
   grid-area: main-get-started-button;
   cursor: pointer;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(0.5rem, 2vw, 2rem);
   font-weight: bold;
-  width: 30%;
+  width: 20%;
   height: auto;
   margin: 1vw;
   margin-left: 40%;
   margin-bottom: 3vw;
-  padding: 8px; 
+  padding: 0.25vw; 
   border: 1px inset #000000;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: #bbaa47e5; 
   color: #000000; 
   box-shadow: solid 0 0 10px rgba(0, 0, 0, 0.5); 
   animation: pulse 2s infinite 2s; 
+  line-height: 1.5;
 }
 
 /* define the animation */
@@ -163,6 +167,7 @@ body {
   height: auto;
   text-align: center; 
   font-size: clamp(0.75rem, 3vw, 3rem);
+  overflow: hidden;
 }
 
 .chatbot-container,
@@ -174,7 +179,7 @@ body {
   background: linear-gradient(to right, #f4f7fa96, #d4e4f7a8);
   /* border: 1px solid #000; */
   color: #000000c4;
-  border: 2.5px solid #000000c4;;
+  /* border: 2.5px #000000c4; */
   border-radius: 50px; 
   width: auto;
   padding: 10px;

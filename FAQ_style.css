@@ -4,7 +4,7 @@ body {
 
 :root {
 	--cards: 7;
-	--cardHeight: 40vh;
+	--cardHeight: auto;
 	--cardTopPadding: 4.8vh;
 	--cardMargin: 4vw;
 }

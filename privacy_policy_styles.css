@@ -4,21 +4,20 @@ body {
 
   
   .top-mid-container {
-    display: grid;
-    grid-template-columns: auto; 
-    grid-template-areas: 
-        "top-mid-title"      
-        "top-mid-paragraph"; 
-    margin-left: 10vw;
-    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-top: -10vw;
+    font-size: clamp(1rem, 2vw, 1.5rem);
   }
   
   .top-mid-title{
     grid-area: top-mid-title;
     text-align: center;
       padding: 1vw;
-      margin: 1vw;
-    font-size: 4vw;
+    font-size: clamp(1.5rem, 4vw, 3rem);
   }
  
   
@@ -27,20 +26,9 @@ body {
     text-align: left;
       padding: 1vw;
       margin: 1vw;
-      font-size: 2vw;
       margin-bottom: 10vw;
   }
 
-  @media only screen and (max-width: 767px) {
-    .top-mid-title {
-      font-size: 5vw;
-    }
-    .top-mid-paragraph {
-      
-        font-size: 3.5vw;
-        
-    }
 
-  }
 
   

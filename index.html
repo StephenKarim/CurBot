@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="header_styles.css">
     <link rel="stylesheet" href="footer_styles.css">  
     <script defer src="menu_func.js"></script>
+    <script src="webcomponents-loader.js"></script> 
+    <script type="module" src="model-viewer.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script nomodule 
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
 
 <body>
     <header>
@@ -68,6 +74,10 @@
         
         <div class="top-text">
             <img class="top-img" src="Images/c++.jpeg" alt="C++ Logo">
+           <!-- <model-viewer class="podium" id="podium" src="Models/pedit4/podiumnew8.glb" 
+  alt="A 3D model of a podium" shadow-intensity="0" animation-name="1" 
+ rotation-per-second="30deg" auto-rotate-delay="30" loading="lazy" >
+</model-viewer> -->
             <span class="top-paragraph">CurBot is a web-based chatbot tailored to students.
                 This edition focuses on the Introduction to C++ Programming course. The primary purpose is to supplement
                 the course material by providing interactive content and responsive assistance focused on the
@@ -116,18 +126,6 @@
       
 
       <script>
-         document.addEventListener('DOMContentLoaded', function() {
-      // Add the 'slide-in' class to trigger the transition
-      document.querySelector('.top-container').classList.add('slide-in');
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-      // Delay the addition of the 'pop-in' class by 1 second
-      setTimeout(function() {
-        // Add the 'pop-in' class to trigger the transition
-        document.querySelector('.top-img').classList.add('pop-in');
-      }, 500); // 1000 milliseconds = 1 second
-    });
 
     document.addEventListener('DOMContentLoaded', function () {
   const topContainer = document.querySelector('.top-container');
@@ -184,17 +182,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-        function redirectToStreamlit() {
-            // Redirect to your Streamlit app URL when the button is clicked
-            window.location.href = "https://curbot.streamlit.app/";
-        }
+        // function redirectToStreamlit() {
+        //     // Redirect to your Streamlit app URL when the button is clicked
+        //     window.location.href = "https://curbot.streamlit.app/";
+        // }
         
-        function hoverEffect() {
-            document.getElementById("get-started-button").classList.add("hovered");
-        }
-        function hoverEffect1() {
-            document.getElementById("lets-button").classList.add("hovered");
-        }
+        // function hoverEffect() {
+        //     document.getElementById("get-started-button").classList.add("hovered");
+        // }
+        // function hoverEffect1() {
+        //     document.getElementById("lets-button").classList.add("hovered");
+        // }
     </script>
 
 </body>
