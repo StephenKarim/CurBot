@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
     getStartedButton.addEventListener("click", function () {
-      window.location.href = "https://curbot.streamlit.app/";
+      window.location.href = "https://curbotchat.vercel.app/";
     });
 
   letsButton.addEventListener("click", function () {

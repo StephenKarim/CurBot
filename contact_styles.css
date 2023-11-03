@@ -6,7 +6,8 @@ body {
   background-attachment: fixed; 
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  background-color: white;
+  border: 1px solid rgb(247, 247, 247);
 }
 
 .letter-image {
@@ -195,19 +196,19 @@ body {
 
   .names {
     margin-top: 6vw;
-    margin-left: clamp(12rem, 30vw, 50rem);
+    margin-left: clamp(12rem, 35vw, 50rem);
     color: rgba(255, 255, 255, 0.692);
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(0.75rem, 5vw, 1.5rem);
   }
 
   .role {
     color:rgb(58, 58, 57);
-    
+    font-size: clamp(1rem, 5vw, 2rem);
     font-weight: bold;
   }
   .page-title {
     color: #bba947;
-  
+    color:rgb(255, 255, 255);
     font-size: clamp(2rem, 5vw, 4rem);
     display: flex;
     font-weight: bold;
@@ -220,10 +221,15 @@ body {
   @media (width <= 1280px) {
     .names {
       
-      margin-left: clamp(1rem, 18vw, 20rem);
+      margin-left: clamp(15rem, 30vw, 19rem);
      
     }
+
+    .shadow {      
+      margin-left: 70vw;
+      margin-top: clamp(-2rem, -4vw, -5rem);
   }
+}
 
   @media (width <= 600px) {
     .names {
@@ -397,9 +403,9 @@ body {
 .first,
 .second {
 
-  color:#e95f55ee;
-    background-color: #e95f55ee;
-    background: #e95f55ee;
+  color:#be2e33ee;
+    background-color: #be2e33ee;
+    background: #be2e33ee;
   /* .body {
   
     border-color: transparent transparent #000000 transparent;
