@@ -286,8 +286,8 @@ body {
       
     
         .shadow {      
-          margin-left:70vw;
-          margin-top: clamp(-2rem, -4vw, -5rem);
+          margin-left:72vw;
+          margin-top: clamp(-0.2rem, -4vw, -5rem);
         }
   
       }
