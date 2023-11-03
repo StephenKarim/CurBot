@@ -1,11 +1,12 @@
 body {
-  background-image: url(Images/postoffice.jpg);
+  background-image: url(Images/postoffice3.jpg);
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover; 
   background-attachment: fixed; 
   display: flex;
   flex-direction: column;
+  border: 1px solid white;
 }
 
 .letter-image {
@@ -18,6 +19,7 @@ body {
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
+  margin-top: -2vw;
 }
 
 .animated-mail {
@@ -28,8 +30,8 @@ body {
   -moz-transition: .4s;
   transition: .4s;
   /* border: 1px solid white; */
-  margin-left: 55vw;
-  margin-top: 2vw;
+  margin-left: 65vw;
+  margin-top: -3vw;
   
   .body {
     position: absolute;
@@ -38,7 +40,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 0 0 100px 200px;
-    border-color: transparent transparent #e95f55 transparent;
+    border-color: transparent transparent #e95f55ee transparent;
     z-index: 2;   
   }
   
@@ -55,7 +57,7 @@ body {
     -moz-transition: transform .4s .4s, z-index .2s .4s;
     transform-origin: 50% 0%;
     transition: transform .4s .4s, z-index .2s .4s;
-    border-color: #cf4a43 transparent transparent transparent;
+    border-color: #cf4a43ee transparent transparent transparent;
     z-index: 2;
   }
   
@@ -64,7 +66,7 @@ body {
     bottom: 0;
     width: 200px;
     height: 100px;
-    background: #cf4a43;
+    background: #cf4a43ee;
     z-index: 0;
   }
   
@@ -75,7 +77,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 50px 0 50px 100px;
-    border-color: transparent transparent transparent #e15349;
+    border-color: transparent transparent transparent #e15349ee;
     z-index: 2;
   }
   
@@ -97,8 +99,8 @@ body {
       width: 100%;
       background: repeating-linear-gradient(
         -45deg,
-        #cb5a5e,
-        #cb5a5e 8px,
+        #cb5a5eee,
+        #cb5a5eee 8px,
         transparent 8px,
         transparent 18px
       );
@@ -131,7 +133,7 @@ body {
       border-radius: 100%;
       height: 30px;
       width: 30px;
-      background: #cb5a5e;
+      background: #cb5a5eee;
       opacity: 0.3;
     }
   }
@@ -139,8 +141,8 @@ body {
 
 .shadow {
   position: absolute;
-  margin-left: clamp(20rem, 63.5vw, 69.9rem);
-  margin-top: clamp(1rem, 3vw, 5rem);
+  margin-left: 65vw;
+  margin-top: clamp(-2rem, -4vw, -5rem);
   top: 200px;
   left: 50%;
   width: 400px;
@@ -192,19 +194,28 @@ body {
   }
 
   .names {
-    margin-top: 5vw;
+    margin-top: 6vw;
     margin-left: clamp(12rem, 30vw, 50rem);
-    color: white;
+    color: rgba(255, 255, 255, 0.692);
     font-size: clamp(1rem, 5vw, 2rem);
   }
 
+  .role {
+    color:rgb(58, 58, 57);
+    
+    font-weight: bold;
+  }
   .page-title {
-    color: white;
+    color: #bba947;
+  
     font-size: clamp(2rem, 5vw, 4rem);
     display: flex;
+    font-weight: bold;
     justify-content: center;
     margin: 2vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
+
 
   @media (width <= 1280px) {
     .names {
@@ -221,6 +232,222 @@ body {
      
     }
   }
+
+/* .docs {
+  color:#50df3b ;
+  font-weight: bold;
+} */
+
+/* .back {
+  color:rgb(58, 58, 57);
+  font-weight: bold;
+}  */
+  .seventh,
+.eighth {
+
+  color:#3ca12dee ;
+  background-color: #3ca12dee ;
+  background: #3ca12dee ;
+  .body {
+  
+    border-color: transparent transparent #429935ee transparent;
+  }
+
+  .top-fold {
+   
+    border-color: #3b922eee  transparent transparent transparent;
+ 
+  }
+
+ .back-fold {
+   
+    background: #3ca12dee ;
+  }
+    .left-fold {
+  
+    
+    border-color: transparent transparent transparent #389929ee ;
+   
+  }
+.letter {
+  .letter-border {
+     
+    background: repeating-linear-gradient(
+      -45deg,
+      #4a8d3fee ,
+      #488d3eee  8px,
+      transparent 8px,
+      transparent 18px
+    );
+  }
+}
+
+  
+
+ .letter-stamp {
+      
+      background: #a9d894ee ;
+   
+    }
+
+}
+
+.fifth,
+.sixth {
+
+  color:#a34cc9ee;
+    background-color: #a34cc9ee;
+    background: #a34cc9ee;
+  .body {
+  
+    border-color: transparent transparent #aa4ad3ee transparent;
+  }
+
+  .top-fold {
+   
+    border-color: #a53dd1ee transparent transparent transparent;
+ 
+  }
+
+ .back-fold {
+   
+    background: #9b30c9ee;
+  }
+    .left-fold {
+  
+    
+    border-color: transparent transparent transparent #a53fd1ee;
+   
+  }
+
+  .letter {
+    .letter-border {
+       
+      background: repeating-linear-gradient(
+        -45deg,
+        #ae55d4ee ,
+        #ae55d4ee 8px,
+        transparent 8px,
+        transparent 18px
+      );
+    }
+  }
+  
+
+ .letter-stamp {
+      
+      background: #000000;
+   
+    }
+
+}
+
+
+.third,
+.fourth {
+
+  color:#d3643bee;
+    background-color: #d3643bee;
+    background: #d3643bee;
+  .body {
+  
+    border-color: transparent transparent #d3643bee transparent;
+  }
+
+  .top-fold {
+   
+    border-color: #ca5a31ee transparent transparent transparent;
+ 
+  }
+
+ .back-fold {
+   
+    background: #c26341ee;
+  }
+    .left-fold {
+  
+    
+    border-color: transparent transparent transparent #ca6742ee;
+   
+  }
+
+  .letter {
+    .letter-border {
+       
+      background: repeating-linear-gradient(
+        -45deg,
+        #c06e50ee,
+        #c06e50ee 8px,
+        transparent 8px,
+        transparent 18px
+      );
+    }
+  }
+  
+
+ .letter-stamp {
+      
+      background: #000000;
+   
+    }
+
+}
+
+
+.first,
+.second {
+
+  color:#e95f55ee;
+    background-color: #e95f55ee;
+    background: #e95f55ee;
+  /* .body {
+  
+    border-color: transparent transparent #000000 transparent;
+  }
+
+  .top-fold {
+   
+    border-color: #000000 transparent transparent transparent;
+ 
+  }
+
+ .back-fold {
+   
+    background: #000000;
+  }
+    .left-fold {
+  
+    
+    border-color: transparent transparent transparent #000000;
+   
+  }
+
+  .letter {
+    .letter-border {
+       
+      background: repeating-linear-gradient(
+        -45deg,
+        #6A9955,
+        #6A9955 8px,
+        transparent 8px,
+        transparent 18px
+      );
+    }
+  }
+  
+
+ .letter-stamp {
+      
+      background: #000000;
+   
+    } */
+
+}
+
+
+
+
+ 
 
 
 
