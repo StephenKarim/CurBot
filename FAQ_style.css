@@ -4,7 +4,7 @@ body {
 
 :root {
 	--cards: 7;
-	--cardHeight: 50vh;
+	--cardHeight: 40vh;
 	--cardTopPadding: 4.8vh;
 	--cardMargin: 4vw;
 }
@@ -63,8 +63,8 @@ body {
 }
 
 .card span{
-  font-size: clamp(0.5rem, 2vw, 1.7rem);
-  padding: 20px;
+  font-size: clamp(0.75rem, 2vw, 1.7rem);
+  padding: 1vw;
   padding-left: 4vw;
   line-height: 1.5;
 }
@@ -108,7 +108,7 @@ body {
 
 .card-body {
 	box-sizing: border-box;
-	padding: 30px;
+	padding: 1vw;
 	border-radius: 50px;
 	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
 	height: var(--cardHeight);
