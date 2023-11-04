@@ -126,10 +126,12 @@
       
 
       <script>
-
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   const topContainer = document.querySelector('.top-container');
+  const chatContainer = document.querySelector('.chatbot-container');
+  const resourceContainer = document.querySelector('.resource-container');
   const elements = [topContainer];
+  const containers = [chatContainer, resourceContainer];
 
   function handleScroll() {
     const triggerOffset = window.innerHeight * 0.8; // Adjust as needed
@@ -146,32 +148,22 @@
         element.classList.add('slide-out');
       }
     });
-  }
 
-  // Attach scroll event listener
-  window.addEventListener('scroll', handleScroll);
-});
+    // Check screen height and apply animation logic accordingly
+    if (window.innerHeight < 1000) {
+      containers.forEach(container => {
+        const containerOffset = container.getBoundingClientRect().top;
+        const isInView = containerOffset < triggerOffset;
 
-document.addEventListener('DOMContentLoaded', function() {
-  const chatContainer = document.querySelector('.chatbot-container');
-  const resourceContainer = document.querySelector('.resource-container');
-  const containers = [chatContainer, resourceContainer];
-
-  function handleScroll() {
-    const triggerOffset = window.innerHeight * 0.8; // Adjust as needed
-
-    containers.forEach(container => {
-      const containerOffset = container.getBoundingClientRect().top;
-      const isInView = containerOffset < triggerOffset;
-
-      if (isInView) {
-        container.classList.add('slide-in');
-        container.classList.remove('slide-out');
-      } else {
-        container.classList.remove('slide-in');
-        container.classList.add('slide-out');
-      }
-    });
+        if (isInView) {
+          container.classList.add('slide-in');
+          container.classList.remove('slide-out');
+        } else {
+          container.classList.remove('slide-in');
+          container.classList.add('slide-out');
+        }
+      });
+    }
   }
 
   // Attach scroll event listener
