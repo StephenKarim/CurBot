@@ -22,11 +22,22 @@ header {
   grid-template-areas: "header-title menu-items";
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%);
-  z-index: 1;
-  opacity: 0.9;
+  z-index: 1;  
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  animation: slideIn 0.5s ease-in-out forwards;
   /* margin-bottom: 3vw; */
   /* border: 1px solid #000000; */
 }
+
+@keyframes slideIn {
+  to {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
 
 .header-title {
   grid-area: header-title;
