@@ -1,5 +1,5 @@
 body {
-  background-image: url(Images/postoffice4.jpg);
+  background-image: url(Images/postoffice3.jpg);
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover; 
@@ -197,7 +197,7 @@ body {
   .names {
     margin-top: 6vw;
     margin-left: clamp(10rem, 30vw, 33rem);
-    color: rgba(255, 255, 255, 0.692);
+    color: rgba(255, 255, 255, 0.925);
     font-size: clamp(0.75rem, 5vw, 2rem);
   }
 

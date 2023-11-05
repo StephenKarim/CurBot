@@ -14,7 +14,7 @@ import os
 def get_vectorstore():
     client = qdrant_client.QdrantClient(
         os.getenv("QDRANT_HOST"),
-        api_key=os.getenv("QDRANT_API_KEY")
+        api_key=os.getenv("QDRANT_API_KEY"),
     )
         
     embeddings = OpenAIEmbeddings()

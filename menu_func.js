@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     chatBotButton.addEventListener("click", function () {
-        window.location.href = "about.html";
+        window.location.href = "https://curbotchat.vercel.app/";
       });
 
     getStartedButton.addEventListener("click", function () {
