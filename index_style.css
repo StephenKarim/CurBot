@@ -200,6 +200,7 @@ body {
   transition: opacity 0.5s, transform 0.5s;
 }
 
+
 .resource-container {
   opacity: 0;
   transform: translateX(100%);
@@ -226,6 +227,7 @@ body {
 .bot-resource-paragraph,
 .bot-curbot-paragraph {
   padding:1vw;
+  font-size: clamp(0.5rem, 2vw, 2.5rem);
 }
 
 @keyframes slideIn {
