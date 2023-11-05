@@ -170,7 +170,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center; 
-  font-size: clamp(0.75rem, 3vw, 3rem);
+  font-size: clamp(1rem, 3.5vw, 3rem);
   overflow: hidden;
 }
 
@@ -227,7 +227,7 @@ body {
 .bot-resource-paragraph,
 .bot-curbot-paragraph {
   padding:1vw;
-  font-size: clamp(0.5rem, 2vw, 2.5rem);
+  font-size: clamp(0.75rem, 2.5vw, 2.5rem);
 }
 
 @keyframes slideIn {
