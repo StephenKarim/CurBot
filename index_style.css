@@ -251,7 +251,7 @@ body {
     animation: slideIn 0.5s ease-in-out forwards;
   } 
 
-  @media (width <= 600px){
+  @media (width <= 768px){
  
     .chatbot-container,
     .resource-container {
