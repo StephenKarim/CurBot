@@ -173,21 +173,14 @@ document.addEventListener('DOMContentLoaded', function () {
 function changeImage() {
     var imgElement = document.querySelector('.bot-curbot-img');
     imgElement.src = 'Images/loading.gif'; // Replace with the path to the new image
-    imgElement.alt = 'New Alt Text'; // Replace with the new alt text
+    imgElement.alt = 'Loading'; // Replace with the new alt text
+    setTimeout(changeImage, 5000); 
+    imgElement.src = 'Images/CurBot chatbot.png';  
+    imgElement.alt = 'Curbot Icon'; 
   }
 
 
 
-
-
-       
-        
-        // function hoverEffect() {
-        //     document.getElementById("get-started-button").classList.add("hovered");
-        // }
-        // function hoverEffect1() {
-        //     document.getElementById("lets-button").classList.add("hovered");
-        // }
     </script>
 
 </body>
