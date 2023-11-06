@@ -289,6 +289,12 @@ body {
           margin-left:72vw;
           margin-top: clamp(-0.2rem, -4vw, -5rem);
         }
+
+        @media (width <= 500px) {
+          .shadow {      
+            margin-left:74vw;
+          }
+        }
   
       }
     }
