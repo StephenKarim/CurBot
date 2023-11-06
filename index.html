@@ -172,13 +172,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function changeImage() {
     var imgElement = document.querySelector('.bot-curbot-img');
-    imgElement.src = 'Images/loading.gif'; // Replace with the path to the new image
-    imgElement.alt = 'Loading'; // Replace with the new alt text
-    setTimeout(changeImage, 5000); 
-    imgElement.src = 'Images/CurBot chatbot.png';  
-    imgElement.alt = 'Curbot Icon'; 
-  }
+    
+    // Save the current image source and alt text
+    var originalSrc = imgElement.src;
+    var originalAlt = imgElement.alt;
 
+    // Change to loading image
+    imgElement.src = 'Images/loading.gif';
+    imgElement.alt = 'Loading';
+
+    // Set a timeout to change back to the original image after 5 seconds
+    setTimeout(function () {
+        imgElement.src = originalSrc;
+        imgElement.alt = originalAlt;
+    }, 5000);
+}
+
+// Attach the changeImage function to the click event of your image element
+var imgElement = document.querySelector('.bot-curbot-img');
+imgElement.addEventListener('click', changeImage);
 
 
     </script>
