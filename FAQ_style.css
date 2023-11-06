@@ -82,7 +82,7 @@ body {
 }
 
 .card span{
-  font-size: clamp(0.75rem, 2vw, 1.7rem);
+  font-size: clamp(1rem, 2vw, 1.7rem);
   padding: 1vw;
   padding-left: 4vw;
   line-height: 1.5;
