@@ -216,7 +216,22 @@ body {
     margin: 2vw;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
+  @media (width <= 1440px) {
+    .names {
+      
+      margin-left: clamp(10rem, 30vw, 21rem);
+     
+    }
 
+    .shadow {      
+      margin-left: 75vw;
+      margin-top: clamp(-0.5rem, -4vw, -5rem);
+  }
+
+  .animated-mail {
+    margin-left: 70vw;
+  }
+  }
 
   @media (width <= 1280px) {
     .names {
@@ -227,7 +242,7 @@ body {
 
     .shadow {      
       margin-left: 75vw;
-      margin-top: clamp(-2rem, -4vw, -5rem);
+      margin-top: clamp(-0.5rem, -4vw, -5rem);
   }
 
   .animated-mail {
@@ -243,7 +258,7 @@ body {
 
     .shadow {      
       margin-left:77vw;
-      margin-top: clamp(-0.5rem, -4vw, -5rem);
+     
     }
 
     @media (width <= 900px) {
