@@ -247,8 +247,8 @@ body {
   .top-container {
     opacity: 0;
     transform: translateX(-100%);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    animation: slideIn 0.5s ease-in-out forwards;
+    transition: opacity 0.75s ease-in-out, transform 0.5s ease-in-out;
+    animation: slideIn 0.75s ease-in-out forwards;
   } 
 
   @media (width <= 768px){
@@ -260,12 +260,19 @@ body {
       transition: none;
     }
     
-  .chatbot-container,
+  .chatbot-container{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.85s ease-in-out, transform 0.5s ease-in-out;
+    animation: slideIn 0.85s ease-in-out forwards;
+  }
+
+  
   .resource-container {
     opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    animation: slideIn 0.5s ease-in-out forwards;
+    transform: translateX(100%);
+    transition: opacity 0.75s ease-in-out, transform 0.5s ease-in-out;
+    animation: slideIn 0.75s ease-in-out forwards;
   }
 }
  
