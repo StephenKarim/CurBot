@@ -71,6 +71,7 @@ body {
 #card8 {
 	--index: 8;
   opacity: 0;
+  pointer-events: none;
 }
 
 .card {
