@@ -140,14 +140,14 @@ body {
 }
 
 h2 {
-	font-size: clamp(1rem, 2.5vw, 2.5rem);
+	font-size: clamp(0.8rem, 2.5vw, 2.5rem);
   padding:2vw;
   /* border: 2px solid black; */
-  border-right: 2px solid black;
+  border-right: 1.5px solid black;
   /* border-radius: 20px; */
-  font-weight: 600;
+  font-weight: bold;
   margin-left: 3vw;
-  
+  text-align: center;
   max-height: 40vh;
   min-width: 20vw;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
