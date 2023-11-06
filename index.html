@@ -88,7 +88,7 @@
     </div>
    
     <div class="bot-container">
-        <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-container" id="chatbot-container" onclick="changeImage()">
             <span class="bot-title">CurBot</span>
             <img class="bot-curbot-img" src="Images/CurBot chatbot.png" alt="CurBot">
             <span class="bot-curbot-paragraph">The Curriculum Bot</span>
@@ -169,6 +169,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Attach scroll event listener
   window.addEventListener('scroll', handleScroll);
 });
+
+function changeImage() {
+    var imgElement = document.querySelector('.bot-curbot-img');
+    imgElement.src = 'Images/loading.gif'; // Replace with the path to the new image
+    imgElement.alt = 'New Alt Text'; // Replace with the new alt text
+  }
 
 
 
