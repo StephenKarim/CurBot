@@ -64,10 +64,10 @@
         </div>
       </div>
       <div class="container">
-        <h2>ECNG1009</h2>
+        <span class="top-title">ECNG 1009 Content</span>
         <div class="topics-list">
       
-          <div class="topic">
+          <div class="topic" onclick="toggleDescription(this)">
             1. Introduction to C++
             <div class="description">
               An overview of C++ and its fundamental concepts. This section provides a solid introduction to the C++
@@ -82,7 +82,7 @@
             </div>
           </div>
       
-          <div class="topic">
+          <div class="topic" onclick="toggleDescription(this)">
             2. Approach to Programming C++
             <div class="description">
               Exploring the approach to programming in C++. This section delves into the methodology and mindset
@@ -96,7 +96,7 @@
             </div>
           </div>
       
-          <div class="topic">
+          <div class="topic" onclick="toggleDescription(this)">
             3. Data, Data Types and Basic Operations
             <div class="description">
               Understanding data types and basic operations in C++. This section is fundamental to grasping how to
@@ -209,14 +209,12 @@
         description.style.display = description.style.display === 'block' ? 'none' : 'block';
       }
 
-      if (subTopics) {
-        subTopics.style.display = subTopics.style.display === 'block' ? 'none' : 'block';
-      }
+      // if (subTopics) {
+      //   subTopics.style.display = subTopics.style.display === 'block' ? 'none' : 'block';
+      // }
     });
   });
 });
-
-
 
 
     </script>
