@@ -142,11 +142,11 @@ body {
 
 .shadow {
   position: absolute;
-  margin-left: 68.2vw;
+  margin-left: 68.3vw;
   margin-top: clamp(-1rem, -3vw, -4rem);
   top: 200px;
   left: 50%;
-  width: 400px;
+  width: 250px;
   height: 30px;
   transition: .4s;
   transform: translateX(-50%);
@@ -181,7 +181,7 @@ body {
     }
     
     .shadow {
-      width: 250px;
+      width: 200px;
     }
   }
 
@@ -216,109 +216,152 @@ body {
     margin: 2vw;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
-  @media (width <= 1440px) {
-    .names {
-      
-      margin-left: clamp(10rem, 30vw, 21rem);
-     
-    }
 
+  @media (width <= 1600px) {
     .shadow {      
-      margin-left: 75vw;
+      margin-left: 68.7vw;
       margin-top: clamp(-0.5rem, -4vw, -5rem);
   }
 
-  .animated-mail {
-    margin-left: 70vw;
-  }
-  }
 
-  @media (width <= 1280px) {
-    .names {
-      
-      margin-left: clamp(10rem, 30vw, 21rem);
-     
-    }
-
-    .shadow {      
-      margin-left: 75vw;
-      margin-top: clamp(-0.5rem, -4vw, -5rem);
-  }
-
-  .animated-mail {
-    margin-left: 70vw;
-  }
-
-  @media (width <= 1000px) {
-    .names {
-      
-      margin-left: clamp(1rem, 30vw, 14rem);
-     
-    }
-
-    .shadow {      
-      margin-left:77vw;
-     
-    }
-
-    @media (width <= 900px) {
+    @media (width <= 1440px) {
       .names {
-      
-        margin-left: 20vw;
+        
+        margin-left: clamp(10rem, 30vw, 21rem);
        
       }
-
-     
-
-      .animated-mail {
-        margin-left: 65vw;
-      }
-    
   
       .shadow {      
-        margin-left:73vw;
+        margin-left: 74.7vw;
         margin-top: clamp(-0.5rem, -4vw, -5rem);
+    }
+  
+    .animated-mail {
+      margin-left: 70vw;
+    }
+    }
+  
+    @media (width <= 1280px) {
+      .names {
+        
+        margin-left: clamp(10rem, 30vw, 21rem);
+       
       }
-
-
-      @media (width <= 700px) {
+  
+      .shadow {      
+        margin-left: 75.2vw;
+        margin-top: clamp(-0.5rem, -4vw, -5rem);
+    }
+  
+    .animated-mail {
+      margin-left: 70vw;
+    }
+  
+    @media (width <= 1000px) {
+      .names {
+        
+        margin-left: clamp(1rem, 30vw, 10rem);
+       
+      }
+  
+      .letter-image {
+        -webkit-transform: translate(-60%, -50%);
+        -moz-transform: translate(-60%, -50%);
+        transform: translate(-60%, -50%);
+      }
+  
+      /* .animated-mail {
+        margin-left: 60vw;
+      } */
+  
+      .shadow {      
+        margin-left:76.2vw;
+       
+      }
+  
+      @media (width <= 900px) {
         .names {
-          font-size: clamp(0.75rem, 5vw, 1.2rem);
-          margin-left: 13vw;
+        
+          margin-left: 18vw;
          
         }
   
-        .role {
-          
-          font-size: clamp(1rem, 5vw, 1.5rem);
-        
-  
-        }
+       
   
         .animated-mail {
-          margin-left: 60vw;
+          margin-left: 69vw;
         }
       
     
         .shadow {      
-          margin-left:72vw;
-          margin-top: clamp(-0.2rem, -4vw, -5rem);
-        }
-
-        @media (width <= 500px) {
-          .shadow {      
-            margin-left:74vw;
-          }
+          margin-left:75.5vw;
+          margin-top: clamp(-0.5rem, -4vw, -5rem);
         }
   
+  
+        @media (width <= 700px) {
+          .names {
+            font-size: clamp(1.1rem, 5vw, 1.2rem);
+            margin-left: 10vw;
+           
+          }
+  
+          .letter-image {
+            -webkit-transform: translate(-100%, -50%);
+            -moz-transform: translate(-100%, -50%);
+            transform: translate(-150%, -50%);
+          }
+    
+          .role {
+            
+            font-size: clamp(1rem, 5vw, 1.5rem);
+          
+    
+          }
+    
+          .animated-mail {
+            margin-left: 72vw;
+          }
+        
+      
+          .shadow {      
+            margin-left:82vw;
+            margin-top: clamp(-0.2rem, -4vw, -5rem);
+            
+            overflow: hidden;
+          }
+  
+          @media (width <= 700px) {
+            .shadow {      
+              margin-left:81vw;
+            }
+          }
+  
+          @media (width <= 500px) {
+            .shadow {      
+              margin-left: 83vw;
+            }
+  
+            .names {
+            
+              margin-left:6.5vw;
+             
+            }
+          }
+    
+        }
       }
+  
+      
     }
-
+  
     
   }
 
-  
-}
+  }
+
+
+ 
 
 
 
