@@ -21,13 +21,6 @@ body {
   /* border:1px solid black; */
 }
 
-@media (width <= 900px) {
-  .container {
-    width: 100%;
-  }
-
-}
-
 
 
 
@@ -176,7 +169,7 @@ li {
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 3s steps(44) 1s 1 normal both,
+  animation: typewriter 2s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
 
@@ -188,4 +181,17 @@ li {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
+@media (width <= 900px) {
+  .container {
+    width: 100%;
+  }
+  h2 {
+    margin-top:2vw;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+  }
+
+}
+
+
 
