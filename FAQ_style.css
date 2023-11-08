@@ -5,7 +5,7 @@ body {
 :root {
 	--cards: 8;
 	--cardHeight: auto;
-	--cardTopPadding: clamp(2rem, 3vmax, 3rem);
+	--cardTopPadding: 5vh;
 	--cardMargin: 2vmin;
 }
 
@@ -193,7 +193,7 @@ li {
   to{border-right-color: transparent;}
 }
 
-@media (height <= 700px) {
+@media (height <= 1000px) {
   :root {
     --cards: 8;
     --cardHeight: auto;
