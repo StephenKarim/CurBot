@@ -339,7 +339,7 @@ body {
   
           @media (width <= 500px) {
             .shadow {      
-              margin-left: 83vw;
+              margin-left: 84vw;
             }
   
             .role {
@@ -356,7 +356,7 @@ body {
 
             @media (width <= 450px) {
               .shadow {      
-                margin-left: 86vw;
+                margin-left: 85vw;
               }    
 
               .letter-image {
@@ -365,7 +365,7 @@ body {
               
               @media (width <= 400px) {
                 .shadow {      
-                  margin-left: 87vw;
+                  margin-left: 88vw;
                 }                 
                
               }
