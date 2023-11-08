@@ -5,7 +5,7 @@ body {
 :root {
 	--cards: 8;
 	--cardHeight: auto;
-	--cardTopPadding: clamp(2rem, 3vmax, 3rem);
+	--cardTopPadding: 0;
 	--cardMargin: 2vmin;
 }
 
@@ -185,7 +185,7 @@ li {
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 15em;}
+  to{width: 16em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
