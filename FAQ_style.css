@@ -192,12 +192,3 @@ li {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
-
-@media (height <= 1000px) {
-  :root {
-    --cards: 8;
-    --cardHeight: auto;
-    --cardTopPadding: 5vh;
-    --cardMargin: 0;
-  }
-}
