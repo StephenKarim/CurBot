@@ -6,7 +6,7 @@ body {
 	--cards: 8;
 	--cardHeight: auto;
 	--cardTopPadding: 5vh;
-	--cardMargin: 2vmin;
+	--cardMargin: 0;
 }
 
 
@@ -26,10 +26,6 @@ body {
     width: 100%;
   }
 
-  :root {
-  	--cardTopPadding: clamp(2.5rem, 4vmax, 10rem);
-  
-  }
 }
 
 
@@ -192,3 +188,4 @@ li {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
+
