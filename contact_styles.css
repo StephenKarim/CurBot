@@ -198,12 +198,12 @@ body {
     margin-top: 6vw;
     margin-left: clamp(10rem, 30vw, 33rem);
     color: rgba(255, 255, 255, 0.925);
-    font-size: clamp(0.75rem, 5vw, 2rem);
+    font-size: clamp(0.75rem, 3vw, 2rem);
   }
 
   .role {
     color:rgb(58, 58, 57);
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(1rem, 3vw, 2.5rem);
     font-weight: bold;
   }
   .page-title {
