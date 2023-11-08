@@ -344,13 +344,20 @@ body {
   
             .role {
             
-              font-size: clamp(0.7rem, 4vw, 1.5rem);
+              font-size: clamp(0.9rem, 4vw, 1.5rem);
             
       
             }
             .names {
-              font-size: clamp(0.7rem, 3vw, 1.5rem);
+              font-size: clamp(0.8rem, 3vw, 1.5rem);
               margin-left:6.5vw;
+             
+            }
+
+            @media (width <= 400px) {
+              .shadow {      
+                margin-left: 86vw;
+              }                 
              
             }
           }
