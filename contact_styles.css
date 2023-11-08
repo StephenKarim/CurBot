@@ -6,8 +6,8 @@ body {
   background-attachment: fixed; 
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border: 1px solid rgb(247, 247, 247);
+  background-color: rgb(29, 168, 192);
+  /* border: 1px solid rgb(247, 247, 247); */
 }
 
 .letter-image {
@@ -188,7 +188,7 @@ body {
   .container {  
     display: flex; 
     flex-direction: column;   
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* margin: 10vw; */
     margin-top: 10vw;
     margin-bottom: 10vw;
