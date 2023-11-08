@@ -356,7 +356,7 @@ body {
 
             @media (width <= 450px) {
               .shadow {      
-                margin-left: 84.8vw;
+                margin-left: 85.2vw;
               }    
 
               .letter-image {
@@ -365,7 +365,7 @@ body {
               
               @media (width <= 400px) {
                 .shadow {      
-                  margin-left: 86vw;
+                  margin-left: 87vw;
                 }                 
                
               }
