@@ -3,6 +3,7 @@ body {
   /* padding-top: 17.5vw; */  
   font-family: 'Consolas';
   background-color: rgba(196, 196, 196, 0.795);
+  font-size: 12px;
 }
 
 header {  
@@ -48,7 +49,7 @@ header {
     "header-title-name  header-edition"; */
   align-items: center;     
   justify-content: center; 
-  background-color: transparent;
+  background-color: transparent;  
   width: 60vw;
   height: clamp(7rem, 14vw, 20rem); 
   margin-top: -1vw;
